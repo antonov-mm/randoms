@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <!-- Required meta tags -->
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Генераторы случайных значений" />
+	<meta name="keywords" content="сгенерировать инн, сгенерировать снилс, случайные, генератор рандомен,генератор рандомных,рандом генератор,генератор случайных рф, рандомс рф, рандом" />
+	<meta name="yandex-verification" content="1fbfd706d67477e8" />
+    <title>Генераторы случайных значений и валидаторы данных</title>
+    <!-- plugins:css -->
+    <link rel="stylesheet" href="vendors/simple-line-icons/css/simple-line-icons.css">
+    <link rel="stylesheet" href="vendors/flag-icon-css/css/flag-icon.min.css">
+    <link rel="stylesheet" href="vendors/css/vendor.bundle.base.css">
+    <!-- endinject -->
+    <!-- Plugin css for this page -->
+    <link rel="stylesheet" href="./vendors/daterangepicker/daterangepicker.css">
+    <link rel="stylesheet" href="./vendors/chartist/chartist.min.css">
+    <!-- End plugin css for this page -->
+    <!-- inject:css -->
+    <!-- endinject -->
+    <!-- Layout styles -->
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/dark.css">
+    <!-- End layout styles -->
+    <link rel="shortcut icon" href="./images/favicon.png" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  </head>
+  <body>
+    <div class="container-scroller">
+      <!-- partial:partials/_navbar.html -->
+      <nav class="navbar default-layout-navbar col-lg-12 col-12 p-0 fixed-top d-flex flex-row" >
+        <div class="navbar-brand-wrapper d-flex align-items-center" style="background-color: var(--bg-color);">
+          <a class="navbar-brand brand-logo" href="index.html">
+            <h1 style="color: var(--text-color);">Рандомс</h1>
+          </a>      
+          <a class="navbar-brand brand-logo-mini" href="index.html"><span style="color: var(--text-color);font-weight: bolder; ">Рандомс</span></a>
+        </div>
+        <div class="navbar-menu-wrapper d-flex align-items-center flex-grow-1">
+          <h5 class="mb-0 font-weight-medium d-none d-lg-flex">Добро пожаловать!</h5>
+
+          <ul class="navbar-nav navbar-nav-right ml-auto">
+            <li class="nav-item">
+              <i class="fas fa-moon" id="themeIcon" style="cursor: pointer; font-size: 24px;color: var(--text-color);"></i>
+            </li>
+          </ul>
+          <button class="navbar-toggler navbar-toggler-right d-lg-none align-self-center" type="button" data-toggle="offcanvas">
+            <span class="icon-menu" ></span>
+          </button>
+        </div>
+      </nav>
+      <!-- partial -->
+      <div class="container-fluid page-body-wrapper" data-bs-theme="blue" >
+        <!-- partial:partials/_sidebar.html -->
+        <nav class="sidebar sidebar-offcanvas" id="sidebar" style="background-color: var(--bg-color);">
+          <ul class="nav">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">
+                <span class="menu-title" style="color: var(--text-color);">Главная</span>
+                <i class="icon-screen-desktop menu-icon"></i>
+              </a>
+            </li>
+            <li class="nav-item nav-category"><span class="nav-link">Генераторы</span></li>
+            <li class="nav-item">
+              <a class="nav-link" href="pages/gens/inn.html">
+                <span class="menu-title" style="color: var(--text-color);">ИНН</span>
+                <i class="icon-globe menu-icon"></i>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="pages/gens/snils.html">
+                <span class="menu-title" style="color: var(--text-color);">СНИЛС</span>
+                <i class="icon-book-open menu-icon"></i>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="pages/gens/fio.html">
+                <span class="menu-title" style="color: var(--text-color);">ФИО</span>
+                <i class="icon-chart menu-icon"></i>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="pages/gens/pass.html">
+                <span class="menu-title" style="color: var(--text-color);">ПАСПОРТ</span>
+                <i class="icon-grid menu-icon"></i>
+              </a>
+            </li>
+          </ul>
+        </nav>
+        <!-- partial -->
+        <div class="main-panel">
+          <div class="content-wrapper">
+            <div class="row">
+            	<div class="col-md-6 d-flex align-items-stretch">
+                <div class="row">
+                  <div class="col-md-12 grid-margin stretch-card">
+                    <div class="card">
+                      <div class="card-body">
+                        <h4 class="card-title">Генераторы случайных значений и валидаторы данных</h4>
+                        <p> У программистов (и не только у них) часто возникает необходимость получения различных данных, созданных по определенным правилам. Например, <span class="text-info">ИНН</span>, <span class="text-info">СНИЛС</span>, <span class="text-info">пароли</span> и т.п. Такие данные могут использоваться для тестирования при разработке программных продуктов и для создания тестовых БД.<br><br>
+						Кроме данных, созданных по определенным правилам, существуют данные, имеющие определенную смысловую нагрузку, например, <span class="text-info">ФИО</span> и <span class="text-info">адрес</span>. Согласитесь, что <span class="text-success">"Тихонов Дмитрий Сергеевич"</span> выглядит значительно лучше, чем абракадабра <span class="text-danger">"апдпадыаьыщыфщшуцшууак"</span>.<br><br>
+						Данный сайт предназначен для быстрого создания и получения вышеуказанных данных. Все значения, полученные с помощью данного сервиса, полностью валидны.<br><br>
+						Кроме создания случайных значений Вы можете проверить некоторые данные на соответствие их формату в разделе <span class="text-info">"Валидаторы"</span>. </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6 grid-margin stretch-card">
+                <div class="card">
+                  <div class="card-body">
+                    <h4 class="card-title">О нас</h4>
+                    <div class="row">
+                      <div class="col-md-6">
+                        <address class="text-primary">
+                          <p class="font-weight-bold"> E-mail </p>
+                          <p class="mb-2"> info@randoms.ru </p>
+                        </address>
+                      </div>
+                      <h5> Все интересующие вас вопросы или ваши предложения пишите на нашу почту. </h>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- content-wrapper ends -->
+          <!-- partial:partials/_footer.html -->
+          <footer class="footer">
+            <div class="d-sm-flex justify-content-center justify-content-sm-between">
+              <span class="text-muted d-block text-center text-sm-left d-sm-inline-block">Copyright © рандомс.рф 2024</span>
+              <span class="float-none float-sm-right d-block mt-1 mt-sm-0 text-center"> created by <a href="https://t.me/glhardy" target="_blank">antonov.mm</a></span>
+            </div>
+          </footer>
+          
+          <!-- partial -->
+        </div>
+        <!-- main-panel ends -->
+        
+      </div>
+      <!-- page-body-wrapper ends -->
+    </div>
+    
+    <!-- container-scroller -->
+    <!-- plugins:js -->
+    <script src="vendors/js/vendor.bundle.base.js"></script>
+    <!-- endinject -->
+    <!-- Plugin js for this page -->
+    <script src="./vendors/chart.js/Chart.min.js"></script>
+    <script src="./vendors/moment/moment.min.js"></script>
+    <script src="./vendors/daterangepicker/daterangepicker.js"></script>
+    <script src="./vendors/chartist/chartist.min.js"></script>
+    <!-- End plugin js for this page -->
+    <!-- inject:js -->
+    <script src="js/off-canvas.js"></script>
+    <script src="js/misc.js"></script>
+    <!-- endinject -->
+    <script type="text/javascript" >
+      const body = document.querySelector("body");
+      const themeIcon = document.getElementById("themeIcon");
+
+      const themes = {
+        default: {
+          "--bg-color": "#eae9ea",
+          "--block-color": "#fff",
+          "--text-color": "#0b1f3b",
+          "--btn-color": "#263ce7",
+          "--label-color": "#d1d7fa",
+        },
+        dark: {
+          "--bg-color": "#282b3c",
+          "--block-color": "#161e2b",
+          "--text-color": "#fff",
+          "--btn-color": "#263ce7",
+          "--label-color": "#253044",
+        },
+      };
+
+      // Проверяем наличие переменной в local storage
+      if (!localStorage.getItem("theme")) {
+        localStorage.setItem("theme", JSON.stringify(false));
+      }
+
+      // Считываем данные с local storage
+      let isDarkTheme = JSON.parse(localStorage.getItem("theme"));
+
+      // Устанавливаем текущую тему
+      changeTheme(isDarkTheme);
+
+      themeIcon.addEventListener("click", btnHandler);
+
+      // Функция для обработки нажатия иконки
+      function btnHandler(e) {
+        e.preventDefault();
+        isDarkTheme = !isDarkTheme;
+        localStorage.setItem("theme", isDarkTheme);
+        changeTheme(isDarkTheme);
+      }
+
+      // Функция для смены темы
+      function changeTheme(isDarkTheme) {
+        if (isDarkTheme) {
+          body.classList.add("dark-theme");
+        } else {
+          body.classList.remove("dark-theme");
+        }
+        themeIcon.className = isDarkTheme ? "fas fa-sun" : "fas fa-moon";
+      }
+    </script>
+    <!-- End custom js for this page -->
+  </body>
+</html>
